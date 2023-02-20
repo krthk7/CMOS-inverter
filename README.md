@@ -1,2 +1,0 @@
-# CMOS-inverter
-##Introduction
