@@ -16,7 +16,7 @@ I always aim to understand the the circuits,devices right from the basic and the
 - [ 1. INVERTER Design and Analysis ](#1-INVERTER-Design-and-Analysis)
   - [1.1 CMOS Inverter](#11-CMOS-Inverter)
   - [1.2 Inverter Symbol](#12-Inverter-Symbol)
-  - [1.3 Voltage Transfer Characteristics(VTC)](#1-Voltage-Transfer-Characteristics(VTC))
+  - [1.3 Voltage Transfer Characteristics (VTC)](#13-Voltage-Transfer-Characteristics-(VTC))
 
 
 ***
@@ -24,6 +24,19 @@ I always aim to understand the the circuits,devices right from the basic and the
 ## 1. INVERTER Design and Analysis
 ###### 1.1 CMOS Inverter
 ![CMOS Inverter](./Images/CMOS-Inverter.png)<br>
+.
+.
+
+
+###### 1.2 Inverter Symbol
+![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
+
+
+###### 1.3 Voltage Transfer Characteristics (VTC)
+>Schematic
+![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
+>Output
+![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
 
 
 
