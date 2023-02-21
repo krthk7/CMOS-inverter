@@ -17,6 +17,7 @@ I always aim to understand the the circuits,devices right from the basic and the
   - [1.1 CMOS Inverter](#11-CMOS-Inverter)
   - [1.2 Inverter Symbol](#12-Inverter-Symbol)
   - [1.3 Voltage Transfer Characteristics (VTC)](#13-Voltage-Transfer-Characteristics-(VTC))
+  - [1.4 Transient Analysis](#14-Transient-Analysis)
 
 
 ***
@@ -38,6 +39,12 @@ I always aim to understand the the circuits,devices right from the basic and the
 **Output**
 ![CMOS Inverter](./Images/DC-VTC_OP.png)<br>
 
+
+###### 1.4 Transient Analysis
+**Schematic**
+![CMOS Inverter](./Images/DC-VTC.png)<br>
+**Output**
+![CMOS Inverter](./Images/DC-VTC.png)<br>
 
 
 
