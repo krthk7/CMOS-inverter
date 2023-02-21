@@ -42,9 +42,10 @@ I always aim to understand the the circuits,devices right from the basic and the
 
 ###### 1.4 Transient Analysis
 **Schematic**
-![CMOS Inverter](./Images/DC-VTC.png)<br>
+![CMOS Inverter](./Images/TRAN.png)<br> 
 **Output**
-![CMOS Inverter](./Images/DC-VTC.png)<br>
+![CMOS Inverter](./Images/TRAN_OP.png)<br>
+
 
 
 
