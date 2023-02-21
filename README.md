@@ -33,10 +33,10 @@ I always aim to understand the the circuits,devices right from the basic and the
 
 
 ###### 1.3 Voltage Transfer Characteristics (VTC)
->Schematic
-![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
->Output
-![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
+**Schematic**
+![CMOS Inverter](./Images/DC-VTC.png)<br>
+**Output**
+![CMOS Inverter](./Images/DC-VTC_OP.png)<br>
 
 
 
