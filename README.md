@@ -56,7 +56,10 @@ Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1
 
 
 ## 2. Parameter Variations and its Analysis
+We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
+Most importantly we need to see the varaitions and see what it indiactes.
 ###### 2.1 VDD Variation
+VDD is varied in the step size and e=we get to see the follwing curve.
 **Schematic**
 ![CMOS Inverter](./Images/DC_PARAM_VDD.png)<br>
 **Output**
