@@ -21,7 +21,10 @@ I always aim to understand the the circuits,devices right from the basic and the
   - [2.1 VDD Variation](#21-VDD-Variation)
   - [2.2 PMOS Width(Wp) Variation](#22-PMOS-Width(Wp)-Variation)
   - [2.3 NMOS Width(Wn) Variation](#23-NMOS-Width(Wn)-Variation)
-
+- [3. Power Dissipation](#3-Power-Dissipation)
+  - [3.1 Static](#31-Static)
+  - [3.2 Dynamic(Ideal Condition)](#32-Dynamic(Ideal-Condition))
+  - [3.3 Dynamic(Practical Condition)](#33-Dynamic(Practical-Condition))
 ***
 
 ## 1. INVERTER Design and Analysis
@@ -63,8 +66,21 @@ I always aim to understand the the circuits,devices right from the basic and the
 **Output**
 ![CMOS Inverter](./Images/param_widthNop.png)<br>
 
+## 3. Power Dissipation
+###### 3.1 Static
+**Schematic**
+![CMOS Inverter](./Images/PWRDISn.png)<br>
+**Output**
+![CMOS Inverter](./Images/PWRDISnOP.png)<br>
 
+###### 3.2 Dynamic(Ideal Condition)
+**Schematic**
+![CMOS Inverter](./Images/POWERDISINV.png)<br>
+**Output**
+![CMOS Inverter](./Images/POWERDISINVOP.png)<br>
 
-
-
-  
+###### 3.3 Dynamic(Practical Condition)
+**Schematic**
+![CMOS Inverter](./Images/POWERDISPRAC.png)<br>
+**Output**
+![CMOS Inverter](./Images/POWERDISPRACOP.png)<br>
