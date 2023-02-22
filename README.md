@@ -17,8 +17,10 @@ I always aim to understand the the circuits,devices right from the basic and the
   - [1.1 CMOS Inverter](#11-CMOS-Inverter)
   - [1.2 Inverter Symbol](#12-Inverter-Symbol)
   - [1.3 Voltage Transfer Characteristics (VTC)](#13-Voltage-Transfer-Characteristics-(VTC))
-  - [1.4 Transient Analysis](#14-Transient-Analysis)
-
+- [2. Parameter Variations and its Analysis](#2-Parameter-Variations-and-its-Analysis)
+  - [2.1 VDD Variation](#21-VDD-Variation)
+  - [2.2 PMOS Width(Wp) Variation](#22-PMOS-Width(Wp)-Variation)
+  - [2.3 NMOS Width(Wn) Variation](#23-NMOS-Width(Wn)-Variation)
 
 ***
 
@@ -40,11 +42,26 @@ I always aim to understand the the circuits,devices right from the basic and the
 ![CMOS Inverter](./Images/DC-VTC_OP.png)<br>
 
 
-###### 1.4 Transient Analysis
+## 2. Parameter Variations and its Analysis
+###### 2.1 VDD Variation
 **Schematic**
-![CMOS Inverter](./Images/TRAN.png)<br> 
+![CMOS Inverter](./Images/DC_PARAM_VDD.png)<br>
 **Output**
-![CMOS Inverter](./Images/TRAN_OP.png)<br>
+![CMOS Inverter](./Images/DC_PARAM_VDDOP.png)<br>
+
+###### 2.2 PMOS Width(Wp) Variation
+**Schematic**
+![CMOS Inverter](./Images/param_widthp.png)<br>
+![CMOS Inverter](./Images/param_invwidthP.png)<br>
+**Output**
+![CMOS Inverter](./Images/param_widthpop.png)<br>
+
+###### 2.3 NMOS Width(Wn) Variation
+**Schematic**
+![CMOS Inverter](./Images/param_widthN.png)<br>
+![CMOS Inverter](./Images/param_invwidthN.png)<br>
+**Output**
+![CMOS Inverter](./Images/param_widthNop.png)<br>
 
 
 
