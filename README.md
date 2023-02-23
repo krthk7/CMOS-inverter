@@ -74,7 +74,8 @@ The result is as desired its reduced voltage swing.In later section or different
 
 ###### 2.2 PMOS Width(Wp) Variation
 <br />
-![image](https://user-images.githubusercontent.com/67727794/220941805-facc415f-71a9-46a9-8fd0-b75fb2675241.png)
+
+![CMOS Inverter](./Images/TheoryImages/beta.png)<br>
 The VTC curve doesnt change with the Beta-Ratio it only cuases a shift in swithing threshold.Operation of the gate is not effected by any means.Usually the nominal value is considered based on the design requirements.As indicated varying the pmos width we get better pmos that is better pull up network but a bad pull down network and is a vice-versa when nmos width is varied.So trade off is usually made.<br />
 
 In the follwing section ive separeately simulated the effect for pmos and nmos.Using the .step tool provided by Lt-spice i varied the width in step size.<br />
