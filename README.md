@@ -100,8 +100,9 @@ In the follwing section ive separeately simulated the effect for pmos and nmos.U
 ***
 ## 3. Power Dissipation
 Power dissipation in CMOS is one of the most important factors that needs to be considered.Lets brush upon the different factors and types of power dissipation.<br />
-
-###### 3.1 Static
+![CMOS Inverter](./Images/TheoryImages/Different-power-dissipation-types-in-CMOS-circuits.png)<br>
+###### 3.1  Short-circuit power
+short-circuit power dissipation is induced from the concurrent activation of both the NMOS and PMOS transistors.When the logic changes its state, there is a short window of time where the PMOS and NMOS transistors are switched on simultaneously. A direct current path connecting VDD to the ground is produced within this interval, resulting in short-circuit power dissipation.The power produced does not deliver any meaningful activities at the output and is therefore wasted.
 **Schematic**
 ![CMOS Inverter](./Images/PWRDISn.png)<br>
 **Output**
