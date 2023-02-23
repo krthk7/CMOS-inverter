@@ -56,7 +56,7 @@ Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1
 
 ***
 ## 2. Parameter Variations and its Analysis
-We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
+We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDTH** etc.
 Most importantly we need to see the varaitions and see what it indiactes.<br />
 ### 2.1 VDD Variation
 VDD is varied in the step size and e=we get to see the follwing curve.Scaling the supply voltage means reducing the signal swing.
@@ -125,7 +125,7 @@ Below two sections i have sperately kept the simulation for ideal input voltage(
 ![CMOS Inverter](./Images/POWERDISINVOP.png)<br>
 
 ### 3.3 Switching power(practical input)
-This time ive included the currents in pmos and nmos .It clearly shows the power dissipated the power dissipated at switching coditions.The cuurent avg found at the cload is the differnce between the avg current in pmos annd nmos.Look closely and analyise it for a while!!.The red plot indicates the power dissipated in the pmos and the below it indicates the power disspated in nmos.The final plot indicated the the power at the output that is at the capacitive laod,which is the combination of power disspated at the nmos as well as pmos.
+This time ive included the currents in pmos and nmos .It clearly shows the power dissipated the power dissipated at switching coditions.The cuurent avg found at the cload is the differnce between the avg current in pmos annd nmos.Look closely and analyise it for a while!!.The red plot indicates the power dissipated in the pmos and the below it indicates the power disspated in nmos.The final plot indicated the the power at the output that is at the capacitive laod,which is the combination of power disspated at the nmos as well as pmos.<br />
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISPRAC.png)<br>
 **Output**
