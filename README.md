@@ -48,20 +48,20 @@ A voltage transfer characteristic plots a graph  depicts how a device behaves w
 ![CMOS Inverter](./Images/TheoryImages/vtc.avif)<br>
 Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1.8V.I got the VTC curve,as many would argue the VTC curve needs to be more bent or curvy etc etc..It need not be!!.If i vary the width of the pmos it would. But since its double of nmos its the output i got.This VTC curve teells a lot of things .We can seee the NMOS being off till it reaches Vtn(threshold voltage of NMOS) ,and it gets turned on in saturation region and gradully moves towards linear regionof operation.There's one particular point at which both NMOS and PMOS goes to saturation region of operation.The volatge can be calculated using the formula.<br />
       **-- Vm=(VDD-|Vtp|+Vtn*sqrt(Bn/Bp))/1+sqrt(Bn/Bp) --**
-               
+<br />            
 **Schematic**
 ![CMOS Inverter](./Images/DC-VTC.png)<br>
 **Output**
 ![CMOS Inverter](./Images/DC-VTC_OP.png)<br>
 
-
+***
 ## 2. Parameter Variations and its Analysis
 We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
-Most importantly we need to see the varaitions and see what it indiactes.
-### **2.1 VDD Variation**
+Most importantly we need to see the varaitions and see what it indiactes.<br />
+### 2.1 VDD Variation
 VDD is varied in the step size and e=we get to see the follwing curve.Scaling the supply voltage means reducing the signal swing.
 ![image](https://user-images.githubusercontent.com/67727794/220587921-f39dd8ee-c171-4f16-ba7e-04ca71d39369.png)
-
+<br />
 **Schematic**
 ![CMOS Inverter](./Images/DC_PARAM_VDD.png)<br>
 <br />
@@ -105,7 +105,7 @@ Power dissipation in CMOS is one of the most important factors that needs to be 
 ### 3.1  Short-circuit power
 short-circuit power dissipation is induced from the concurrent activation of both the NMOS and PMOS transistors.When the logic changes its state, there is a short window of time where the PMOS and NMOS transistors are switched on simultaneously. A direct current path connecting VDD to the ground is produced within this interval, resulting in short-circuit power dissipation.The power produced does not deliver any meaningful activities at the output and is therefore wasted.<br />
 ![CMOS Inverter](./Images/TheoryImages/short-dissipation.png)<br>
-Below shows the schematic and also the power dissipation curve.I also plotted the the current curve.You could see as the nmos pmos is both turned on in region 2,3,4 and theres a path for teh current flow.The third plot indicates the power dissipated in the inverter when the input voltage swings 0 to VDD.<br />
+Below shows the schematic and also the power dissipation curve.I also plotted the the current curve.You could see as the nmos pmos is both turned on in region 2,3,4 and theres a path for teh current flow.The third plot indicates the power dissipated in the inverter when the input voltage swings 0 to VDD. <br />
 **Schematic**
 ![CMOS Inverter](./Images/PWRDISn.png)<br>
 **Output**
