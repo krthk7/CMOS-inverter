@@ -59,7 +59,9 @@ Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1
 We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
 Most importantly we need to see the varaitions and see what it indiactes.
 ###### 2.1 VDD Variation
-VDD is varied in the step size and e=we get to see the follwing curve.
+VDD is varied in the step size and e=we get to see the follwing curve.Scaling the supply voltage means reducing the signal swing.
+![image](https://user-images.githubusercontent.com/67727794/220587921-f39dd8ee-c171-4f16-ba7e-04ca71d39369.png)
+
 **Schematic**
 ![CMOS Inverter](./Images/DC_PARAM_VDD.png)<br>
 **Output**
