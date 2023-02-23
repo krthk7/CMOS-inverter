@@ -58,29 +58,45 @@ Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1
 ## 2. Parameter Variations and its Analysis
 We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
 Most importantly we need to see the varaitions and see what it indiactes.
-###### 2.1 VDD Variation
+###### **2.1 VDD Variation**
 VDD is varied in the step size and e=we get to see the follwing curve.Scaling the supply voltage means reducing the signal swing.
 ![image](https://user-images.githubusercontent.com/67727794/220587921-f39dd8ee-c171-4f16-ba7e-04ca71d39369.png)
 
 **Schematic**
 ![CMOS Inverter](./Images/DC_PARAM_VDD.png)<br>
+<br />
 **Output**
 ![CMOS Inverter](./Images/DC_PARAM_VDDOP.png)<br>
+<br />
+The result is as desired its reduced voltage swing.In later section or different repo ill show what is the minimum voltage that has to be maintained to get the swing.<br />
+
+***
 
 ###### 2.2 PMOS Width(Wp) Variation
+<br />
+![image](https://user-images.githubusercontent.com/67727794/220935904-67475333-082d-485f-854b-a87e74e366aa.png)<br />
+The VTC curve doesnt change with the Beta-Ratio it only cuases a shift in swithing threshold.Operation of the gate is not effected by any means.Usually the nominal value is considered based on the design requirements.As indicated varying the pmos width we get better pmos that is better pull up network but a bad pull down network and is a vice-versa when nmos width is varied.So trade off is usually made.<br />
+
+In the follwing section ive separeately simulated the effect for pmos and nmos.Using the .step tool provided by Lt-spice i varied the width in step size.<br />
+<br />
 **Schematic**
 ![CMOS Inverter](./Images/param_widthp.png)<br>
 ![CMOS Inverter](./Images/param_invwidthP.png)<br>
+<br />
 **Output**
+<br />
 ![CMOS Inverter](./Images/param_widthpop.png)<br>
-
+***
 ###### 2.3 NMOS Width(Wn) Variation
 **Schematic**
+<br />
 ![CMOS Inverter](./Images/param_widthN.png)<br>
 ![CMOS Inverter](./Images/param_invwidthN.png)<br>
+<br />
 **Output**
+<br />
 ![CMOS Inverter](./Images/param_widthNop.png)<br>
-
+***
 ## 3. Power Dissipation
 ###### 3.1 Static
 **Schematic**
