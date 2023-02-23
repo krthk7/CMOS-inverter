@@ -99,6 +99,8 @@ In the follwing section ive separeately simulated the effect for pmos and nmos.U
 ![CMOS Inverter](./Images/param_widthNop.png)<br>
 ***
 ## 3. Power Dissipation
+Power dissipation in CMOS is one of the most important factors that needs to be considered.Lets brush upon the different factors and types of power dissipation.<br />
+
 ###### 3.1 Static
 **Schematic**
 ![CMOS Inverter](./Images/PWRDISn.png)<br>
