@@ -117,7 +117,7 @@ Static power Pstatic refers to the power lost when the CMOS circuit is dormant. 
 ***
 ###### 3.2 Switching power(ideal input)
 The energy delivered to a CMOS circuit can be classified into two parts, namely, the charging and discharging of the load capacitance CL.During these conditions there is power dissipated in the circuit.<br />
-![CMOS Inverter](./Images/TheoryImages/switching.png.png)<br>
+![CMOS Inverter](./Images/TheoryImages/switching.png)<br>
 Below two sections i have sperately kept the simulation for ideal input voltage(with no rise time and fall time) and practical input voltage.<br />
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISINV.png)<br>
@@ -125,8 +125,13 @@ Below two sections i have sperately kept the simulation for ideal input voltage(
 ![CMOS Inverter](./Images/POWERDISINVOP.png)<br>
 
 ###### 3.3 Switching power(practical input)
-This time ive included the currents in pmos and nmos .it clearly shows the power dissipated the power dissipated at switching coditions.
+This time ive included the currents in pmos and nmos .It clearly shows the power dissipated the power dissipated at switching coditions.The cuurent avg found at the cload is the differnce between the avg current in pmos annd nmos.Look closely and analyise it for a while!!.
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISPRAC.png)<br>
 **Output**
 ![CMOS Inverter](./Images/POWERDISPRACOP.png)<br>
+
+
+
+### Thank You
+<br />In the upcoming repository i will post the noise margin,propagation delay,rise time,fall time at the output etc....
