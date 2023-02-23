@@ -100,28 +100,32 @@ In the follwing section ive separeately simulated the effect for pmos and nmos.U
 ***
 ## 3. Power Dissipation
 Power dissipation in CMOS is one of the most important factors that needs to be considered.Lets brush upon the different factors and types of power dissipation.<br />
-![CMOS Inverter](./Images/TheoryImages/Different-power-dissipation-types-in-CMOS-circuits.png)<br>
+![CMOS Inverter](./Images/TheoryImages/poer.png)<br>
 ***
 ###### 3.1  Short-circuit power
 short-circuit power dissipation is induced from the concurrent activation of both the NMOS and PMOS transistors.When the logic changes its state, there is a short window of time where the PMOS and NMOS transistors are switched on simultaneously. A direct current path connecting VDD to the ground is produced within this interval, resulting in short-circuit power dissipation.The power produced does not deliver any meaningful activities at the output and is therefore wasted.<br />
 ![CMOS Inverter](./Images/TheoryImages/short-dissipation.png)<br>
-Below shows the schematic and also the power dissipation curve.I also plotted the the current curve.You could see as the nmos pmos is both turned on in region 2,3,4 and theres a path for teh current flow.The third plot indicates the power dissipated in the inverter when the input voltage swings 0 to VDD.
+Below shows the schematic and also the power dissipation curve.I also plotted the the current curve.You could see as the nmos pmos is both turned on in region 2,3,4 and theres a path for teh current flow.The third plot indicates the power dissipated in the inverter when the input voltage swings 0 to VDD.<br />
 **Schematic**
 ![CMOS Inverter](./Images/PWRDISn.png)<br>
 **Output**
 ![CMOS Inverter](./Images/PWRDISnOP.png)<br>
+<br />
 One other important dissipation factor is the **Static Power Dissipation**.<br />
 Static power Pstatic refers to the power lost when the CMOS circuit is dormant. The main culprit of Pstatic is the leakage current, which exists mainly because of the short-channel effects.Ideally its considered to be zero.The equation is represented as.<br />
 **P(static)=VDD⋅I(leakage)**<br />
-
+***
 ###### 3.2 Switching power(ideal input)
-The energy delivered to a CMOS circuit can be classified into two parts, namely, the charging and discharging of the load capacitance CL.During these conditions there is power dissipated in the circuit.
+The energy delivered to a CMOS circuit can be classified into two parts, namely, the charging and discharging of the load capacitance CL.During these conditions there is power dissipated in the circuit.<br />
+![CMOS Inverter](./Images/TheoryImages/switching.png.png)<br>
+Below two sections i have sperately kept the simulation for ideal input voltage(with no rise time and fall time) and practical input voltage.<br />
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISINV.png)<br>
 **Output**
 ![CMOS Inverter](./Images/POWERDISINVOP.png)<br>
 
 ###### 3.3 Switching power(practical input)
+This time ive included the currents in pmos and nmos .it clearly shows the power dissipated the power dissipated at switching coditions.
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISPRAC.png)<br>
 **Output**
