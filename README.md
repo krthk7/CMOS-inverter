@@ -22,13 +22,13 @@ I always aim to understand the the circuits,devices right from the basic and the
   - [2.2 PMOS Width(Wp) Variation](#22-PMOS-Width(Wp)-Variation)
   - [2.3 NMOS Width(Wn) Variation](#23-NMOS-Width(Wn)-Variation)
 - [3. Power Dissipation](#3-Power-Dissipation)
-  - [3.1 Static](#31-Static)
-  - [3.2 Dynamic(Ideal Condition)](#32-Dynamic(Ideal-Condition))
-  - [3.3 Dynamic(Practical Condition)](#33-Dynamic(Practical-Condition))
+  - [3.1 Short-circuit power](#31-Short-circuit-power)
+  - [3.2 Switching power(ideal input)](#32-Switching-power(ideal-input))
+  - [3.3 Switching power(practical input)](#33-Switching-power(practical-input))
 ***
 
 ## 1. INVERTER Design and Analysis
-###### 1.1 CMOS Inverter
+### 1.1 CMOS Inverter
 The two networks that make up CMOS circuits are typically referred to as a pull up network and a pull down network, respectively. P-channel MOSFETs make up the first set, followed by N-Channel MOSFETs. Simple explanation One transistor turns on while the other is off. By doing so, the problem of a resistive path to the ground is resolved, and no voltage division results (At least not a significant one). In this manner, a Strong High and a Strong LOW can be produced from the same network with ease. The low resistance paths to the VDD and GND are provided via PULL UP and PULL DOWN, respectively.<br />
 <br />
 ![CMOS Inverter](./Images/TheoryImages/cmos_inverter.png)<br>
@@ -39,10 +39,10 @@ I've specified the I/O pins VIN,VOUT,VDD,GRND) to the inverter by specifying thi
 <br />
 ***
 After the inverter schematic is done,we move on to the Symbol creation.LT-Spice gives an option to create your own symbol and instance it your schematic.Later after creation of symbol I specified the symbol I/O pins. The text in blue you see is the Comment.We would be doing all our simulations and analysis using this.<br />
-###### 1.2 Inverter Symbol
+### 1.2 Inverter Symbol
 ![CMOS Inverter](./Images/Inverter-Symbol.png)<br>
 ***
-###### 1.3 Voltage Transfer Characteristics (VTC)
+### 1.3 Voltage Transfer Characteristics (VTC)
 A voltage transfer characteristic plots a graph  depicts how a device behaves when its input is altered (full swing). It illustrates what transpires to the output as the input varies. In our example, we can see a plot for an inverter that resembles a non-ideal square wave and changes in nature . So, it is possible to say that the VTC curve can be divided into three regions: the region of high output, the region of transition, and the region of low output. However, there are actually five operational areas, and they are based on how inverter components—NMOS and PMOS transistors—work with respect to changes in input potential.<br />
 
 ![CMOS Inverter](./Images/TheoryImages/vtc.avif)<br>
@@ -58,7 +58,7 @@ Keeping the voltage VDD at 1.8V Perform a DC sweep at the input V-GS from 0 to 1
 ## 2. Parameter Variations and its Analysis
 We plotted the the VTC curve,now lets vary differrent parameters and check how will it effect our vtc curve.Lets the check the curve by varying **VDD,WIDT,CLOAD** etc.
 Most importantly we need to see the varaitions and see what it indiactes.
-###### **2.1 VDD Variation**
+### **2.1 VDD Variation**
 VDD is varied in the step size and e=we get to see the follwing curve.Scaling the supply voltage means reducing the signal swing.
 ![image](https://user-images.githubusercontent.com/67727794/220587921-f39dd8ee-c171-4f16-ba7e-04ca71d39369.png)
 
@@ -72,7 +72,7 @@ The result is as desired its reduced voltage swing.In later section or different
 
 ***
 
-###### 2.2 PMOS Width(Wp) Variation
+### 2.2 PMOS Width(Wp) Variation
 <br />
 
 ![CMOS Inverter](./Images/TheoryImages/beta.png)<br>
@@ -88,7 +88,7 @@ In the follwing section ive separeately simulated the effect for pmos and nmos.U
 <br />
 ![CMOS Inverter](./Images/param_widthpop.png)<br>
 ***
-###### 2.3 NMOS Width(Wn) Variation
+### 2.3 NMOS Width(Wn) Variation
 **Schematic**
 <br />
 ![CMOS Inverter](./Images/param_widthN.png)<br>
@@ -102,7 +102,7 @@ In the follwing section ive separeately simulated the effect for pmos and nmos.U
 Power dissipation in CMOS is one of the most important factors that needs to be considered.Lets brush upon the different factors and types of power dissipation.<br />
 ![CMOS Inverter](./Images/TheoryImages/poer.png)<br>
 ***
-###### 3.1  Short-circuit power
+### 3.1  Short-circuit power
 short-circuit power dissipation is induced from the concurrent activation of both the NMOS and PMOS transistors.When the logic changes its state, there is a short window of time where the PMOS and NMOS transistors are switched on simultaneously. A direct current path connecting VDD to the ground is produced within this interval, resulting in short-circuit power dissipation.The power produced does not deliver any meaningful activities at the output and is therefore wasted.<br />
 ![CMOS Inverter](./Images/TheoryImages/short-dissipation.png)<br>
 Below shows the schematic and also the power dissipation curve.I also plotted the the current curve.You could see as the nmos pmos is both turned on in region 2,3,4 and theres a path for teh current flow.The third plot indicates the power dissipated in the inverter when the input voltage swings 0 to VDD.<br />
@@ -115,7 +115,7 @@ One other important dissipation factor is the **Static Power Dissipation**.<br /
 Static power Pstatic refers to the power lost when the CMOS circuit is dormant. The main culprit of Pstatic is the leakage current, which exists mainly because of the short-channel effects.Ideally its considered to be zero.The equation is represented as.<br />
 **P(static)=VDD⋅I(leakage)**<br />
 ***
-###### 3.2 Switching power(ideal input)
+### 3.2 Switching power(ideal input)
 The energy delivered to a CMOS circuit can be classified into two parts, namely, the charging and discharging of the load capacitance CL.During these conditions there is power dissipated in the circuit.<br />
 ![CMOS Inverter](./Images/TheoryImages/switching.png)<br>
 Below two sections i have sperately kept the simulation for ideal input voltage(with no rise time and fall time) and practical input voltage.<br />
@@ -124,8 +124,8 @@ Below two sections i have sperately kept the simulation for ideal input voltage(
 **Output**
 ![CMOS Inverter](./Images/POWERDISINVOP.png)<br>
 
-###### 3.3 Switching power(practical input)
-This time ive included the currents in pmos and nmos .It clearly shows the power dissipated the power dissipated at switching coditions.The cuurent avg found at the cload is the differnce between the avg current in pmos annd nmos.Look closely and analyise it for a while!!.
+### 3.3 Switching power(practical input)
+This time ive included the currents in pmos and nmos .It clearly shows the power dissipated the power dissipated at switching coditions.The cuurent avg found at the cload is the differnce between the avg current in pmos annd nmos.Look closely and analyise it for a while!!.The red plot indicates the power dissipated in the pmos and the below it indicates the power disspated in nmos.The final plot indicated the the power at the output that is at the capacitive laod,which is the combination of power disspated at the nmos as well as pmos.
 **Schematic**
 ![CMOS Inverter](./Images/POWERDISPRAC.png)<br>
 **Output**
